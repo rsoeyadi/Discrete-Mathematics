@@ -121,7 +121,7 @@ In propositional logic (PL), we don't use variables or predicates. We will see t
 
 The **simplest form of a proposition** is called **atomic proposition**. We use symbols to denote atomic propositions: *p, q, r, s, t*
 
-- Def (compound proposition)
+### Def (compound proposition)
 
 Proposition constructed from **atomic proposition using connectives**, or sometimes what are called *logical connectives*
 
