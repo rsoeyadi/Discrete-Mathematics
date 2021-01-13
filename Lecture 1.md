@@ -34,14 +34,6 @@ Good for communication, scheduling airlines, encoding movies and songs, database
 
 Using Overleaf/ShareLaTeX - TexShop (interface) = MicTex
 
-646 306 4032 - Jacqueline Marchal
-
-WeChat - qiaoeryaa - Quan Yuan
-
-My GroupMe: Arlo L. Parker 
-
-Group me link is https://groupme.com/join_group/65286028/Y8kLY9sN
-
 Proposition Logic - **Sunny And Hot**
 
 Inference - **If it's sunny, then I think you'll be at the beach**
@@ -71,5 +63,5 @@ In a class of 163 students, must at least two or more have the same birthday
 
 Maps students to birthdays
 
-mml2238@columbia.edu Michael Lanzano
+
 
