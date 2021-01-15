@@ -12,7 +12,7 @@
 
 - let *a* { **Z**    ----  *a* is even provided there exists *q* { **Z** such that
 
-   														```a = 2 * q```
+   														a = 2 * q
 
 ### Def (divisible)
 
