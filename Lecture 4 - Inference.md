@@ -106,3 +106,7 @@ Prove:
 
 ![simplify2](./Lect4-img/simplify2.png)
 
+**Absorption Exercise to do**
+
+*p* OR (*p* AND *q*) == *p*
+
