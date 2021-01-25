@@ -2,11 +2,18 @@
 
 ### Review
 
+Practice at ```logic-practice.herokuapp.com```
+
 **Tautology** is always true for all inputs
 
 **Fallacy** or **Contradiction** is always false 
 
 **Contingency** is sometimes True, sometimes False
+
+Implication
+
+- for the implication to be true, the right hand must be true
+- *p* -> *q* is *p* only if *q* because if you have *p*, you MUST have *q*
 
 ---
 
