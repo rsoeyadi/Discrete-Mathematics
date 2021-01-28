@@ -24,3 +24,21 @@ If you are getting rid of a variable, try to put it with a **True** w/ Disjuncti
 
 ## Logical Inference
 
+### Def (Argument):
+
+### (note: a valid argument is always True)
+
+An argument in propositional logic **is a sequence** of propositions such that:
+
+1) All but the last propositions are called premises. *p1, p2,...,pn*
+
+2) The last proposition is called the **conclusion**
+
+3) The argument is valid provided **the premises imply the conclusion** (q)
+
+- in other words: *p1 AND p2 AND p3 AND ... AND pn ----> q is a tautology* (**TRUE**)
+
+### Notation
+
+![notation](./Lecture5-img/notation.png)
+
