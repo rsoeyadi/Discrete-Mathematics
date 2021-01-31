@@ -1,4 +1,4 @@
-Notes at 10:18am on January 27th, 2021
+ % %Notes at 10:18am on January 27th, 2021
 
 ---
 
@@ -42,3 +42,28 @@ An argument in propositional logic **is a sequence** of propositions such that:
 
 ![notation](./Lecture5-img/notation.png)
 
+**A valid argument is an implication that is always True**
+
+In general, to prove that an argument:
+
+![prove](./Lecture5-img/prove.png)
+
+Prove that the above is a **Tautology**
+
+If **True or anything**, it is always True
+
+![Inference-rules](./Lecture5-img/Inference-rules.png)
+
+![Inference-rules](./Lecture5-img/Inference-rules2.png)
+
+![Inference-rules](./Lecture5-img/Inference-rules3.png)
+
+Since NOT(*p*) is **True**, then the True from the left statement is from *q*
+
+![Inference-rules](./Lecture5-img/Inference-rules4.png)
+
+**Modus Ponens: "Mode that affirm"**
+
+![Inference-rules](./Lecture5-img/Inference-rules5.png)
+
+![Inference-rules](./Lecture5-img/Inference-rules6.png)
