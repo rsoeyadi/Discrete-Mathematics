@@ -1,10 +1,10 @@
 \documentclass{article}
-
+\usepackage{amsmath}
 \title{Homework 2 - Logic (Spring 2021)}
 \author
 {
-First Name, Last Name
-\and UNI
+Ryan, Soeyadi
+\and rs4163
 }
 
 
@@ -33,17 +33,74 @@ First Name, Last Name
     \newpage
     \section*{Question 3}
     \begin{enumerate}
-    \item
+    \item $E \implies Q$ \\
+    \item $E \lor B$ \\
+    \item $\neg Q$ \\
+    \item $\neg (E \lor Q)$ \\
+    \item $E \land \neg B$ \\
+    \item $\neg B \implies E$ \\
+    \item $Q \implies \neg B$
     \end{enumerate}
     \newpage
     \section*{Question 4}
-    Insert answer for question 4 here.
-    \newpage
+    \begin{enumerate}
+    \item 
+    $E \implies Q$ \\
+    $\neg (E \implies Q)$ \\
+    $E \land \neg Q$ \\
+    \item 
+    $E \lor B$ \\
+    $\neg (E \lor B)$ \\
+    $\neg E \land \neg B$ \\
+    \item 
+    $\neg Q$ \\
+    $\neg (\neg Q)$ \\
+    $Q$ \\
+    \item 
+    $\neg (E \lor Q) \equiv \neg E \land \neg Q$ \\
+    $\neg(\neg E \land \neg Q)$ \\
+    $E \lor Q$ \\
+    \item 
+    $E \land \neg B$ \\
+    $\neg (E \land \neg B)$ \\
+    $\neg E \lor B$ \\
+    \item 
+    $\neg B \implies E \equiv \neg (\neg B) \lor E$ \\
+    $B \lor E$ \\
+    $\neg(B \lor E)$ \\
+    $\neg B \land \neg E$
+    \item 
+    $Q \implies \neg B \equiv \neg Q \lor \neg B$ \\
+    $\neg (\neg Q \lor \neg B)$ \\
+    $Q \land B$ \\
+    \end{enumerate}
+     \newpage
     \section*{Question 5}
-    Insert answer for question 1 here.
+    $\neg p \land (p \lor q) \implies q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv \neg (\neg p \land (p \lor q)) \lor q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv p \lor \neg(p \lor q) \lor q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv p \lor (\neg p \land \neg q) \lor q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv (p \lor \neg p) \land (p \lor \neg q) \lor q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True \land (p \lor \neg q) \lor q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True \land q \lor (p \lor \neg q)$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True \land (q \lor p) \lor (q \lor \neg q)$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True \land (q \lor p) \lor True$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True \land True$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True$ \\
+    Therefore, $\neg p \land (p \lor q) \implies q$ is a Tautology
+    
     \newpage
     \section*{Question 6}
-    Insert answer for question 2 here.    
-   
+    \textbf{if not} ((a $<$ b) \textbf{or} even(a)) \textbf{or} (\textbf{not}(a $<$ b) \textbf{and} even(a)) \\
+    \indent c $=$ a $-$ b \\
+    \textbf{else:}\\
+    \indent c = b $-$ a \\\\
+    Let $p =$ (a $<$ b)\\
+    Let $q =$ even(a)\\\\	
+    $\neg(p \lor q) \lor (\neg p \land q)$ \\
+    $(\neg p \land \neg q) \lor (\neg p \land q)$ \\
+    $\neg p \land (\neg q \lor q)$ \\
+    $\neg p \land True$ \\
+    $\neg p$
 
    \end{document}
