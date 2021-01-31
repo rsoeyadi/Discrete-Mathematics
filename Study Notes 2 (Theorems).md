@@ -1,3 +1,5 @@
+
+
 ### Notes at 9:48am on January 15th, 2020
 
 ## Theorem
@@ -90,4 +92,10 @@ Suppose x and y are integers with the property that x | y and y | x. Then x = y 
 ```
 If an integer is both a perfect square and prime, then it is negative.
 ```
+
+- this statement is **nonsense**
+
+However, since we can't prove that it is false, it is **true**; **this is a vacuous statement**
+
+-  mathematicians consider such statements true because they have no exceptions.
 
