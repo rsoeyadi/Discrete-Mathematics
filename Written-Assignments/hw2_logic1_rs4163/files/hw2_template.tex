@@ -1,0 +1,108 @@
+\documentclass{article}
+\usepackage{amsmath}
+\title{Homework 2 - Logic (Spring 2021)}
+\author
+{
+Ryan, Soeyadi
+\and rs4163
+}
+
+
+\begin{document}
+    \maketitle
+    
+    \section*{Question 1}
+    $\neg p \lor (q \land (r \lor p))$
+    \begin{displaymath}
+    \begin{array}{|c|c|c|c|c|c|c|}
+    
+    p & q & r & r \lor p & q \land (r \lor p) & \neg p & \neg p \lor (q \land (r \lor p)) \\
+    \hline
+    T & T & T & T & T & F & T \\
+    T & T & F & T & T & F & T \\
+    T & F & T & T & F & F & F \\
+    T & F & F & T & F & F & F \\
+    F & T & T & T & T & T & T \\
+    F & T & F & F & F & T & T \\
+    F & F & T & T & F & T & T \\
+    F & F & F & F & F & T & T \\
+    \end{array}
+    \end{displaymath}
+    \newpage
+    \section*{Question 2}
+     This proposition is True since the antecedent is False; there are no two integers that fit the criteria to make it True. Therefore, it does not matter if the right side, the consequence, is True or not.
+    \newpage
+    \section*{Question 3}
+    \begin{enumerate}
+    \item $E \implies Q$ \\
+    \item $E \lor B$ \\
+    \item $\neg Q$ \\
+    \item $\neg (E \lor Q)$ \\
+    \item $E \land \neg B$ \\
+    \item $\neg B \implies E$ \\
+    \item $Q \implies \neg B$
+    \end{enumerate}
+    \newpage
+    \section*{Question 4}
+    \begin{enumerate}
+    \item 
+    $E \implies Q  \equiv \neg E \lor Q$\\
+    $\neg E \lor Q$ \\
+    $\neg (\neg E \lor Q)$ \\
+    $E \land \neg Q$ \\
+    \item 
+    $E \lor B$ \\
+    $\neg (E \lor B)$ \\
+    $\neg E \land \neg B$ \\
+    \item 
+    $\neg Q$ \\
+    $\neg (\neg Q)$ \\
+    $Q$ \\
+    \item 
+    $\neg (E \lor Q) \equiv \neg E \land \neg Q$ \\
+    $\neg(\neg E \land \neg Q)$ \\
+    $E \lor Q$ \\
+    \item 
+    $E \land \neg B$ \\
+    $\neg (E \land \neg B)$ \\
+    $\neg E \lor B$ \\
+    \item 
+    $\neg B \implies E \equiv \neg (\neg B) \lor E$ \\
+    $B \lor E$ \\
+    $\neg(B \lor E)$ \\
+    $\neg B \land \neg E$
+    \item 
+    $Q \implies \neg B \equiv \neg Q \lor \neg B$ \\
+    $\neg (\neg Q \lor \neg B)$ \\
+    $Q \land B$ \\
+    \end{enumerate}
+     \newpage
+    \section*{Question 5}
+    $\neg p \land (p \lor q) \implies q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv \neg (\neg p \land (p \lor q)) \lor q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv p \lor \neg(p \lor q) \lor q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv p \lor (\neg p \land \neg q) \lor q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv (p \lor \neg p) \land (p \lor \neg q) \lor q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True \land (p \lor \neg q) \lor q$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True \land q \lor (p \lor \neg q)$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True \land (q \lor p) \lor (q \lor \neg q)$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True \land (q \lor p) \lor True$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True \land True$ \\
+    $\neg p \land (p \lor q) \implies q \equiv True$ \\
+    Therefore, $\neg p \land (p \lor q) \implies q$ is a Tautology
+    
+    \newpage
+    \section*{Question 6}
+    \textbf{if not} ((a $<$ b) \textbf{or} even(a)) \textbf{or} (\textbf{not}(a $<$ b) \textbf{and} even(a)) \\
+    \indent c $=$ a $-$ b \\
+    \textbf{else:}\\
+    \indent c = b $-$ a \\\\
+    Let $p =$ (a $<$ b)\\
+    Let $q =$ even(a)\\\\	
+    $\neg(p \lor q) \lor (\neg p \land q)$ \\
+    $(\neg p \land \neg q) \lor (\neg p \land q)$ \\
+    $\neg p \land (\neg q \lor q)$ \\
+    $\neg p \land True$ \\
+    $\neg p$
+
+   \end{document}
