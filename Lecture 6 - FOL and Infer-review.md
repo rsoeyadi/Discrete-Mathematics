@@ -2,19 +2,19 @@
 
 ---
 
-Given some premises, if they happen, we can draw conclusions![premise](./Lect-6-img/premise.png)
+Given some premises, if they happen, we can draw conclusions![premise](./Lect6-img/premise.png)
 
 ### Any law in PROPOSITIONAL LOGIC is also an INFERENCE RULE
 
-![premise](./Lect-6-img/premise2.png)
+![premise](./Lect6-img/premise2.png)
 
 ---
 
 ## Examples
 
-![premise](./Lect-6-img/ex1.png) 
+![premise](./Lect6-img/ex1.png) 
 
-![premise](./Lect-6-img/ex1b.png)
+![premise](./Lect6-img/ex1b.png)
 
 ---
 
@@ -44,9 +44,9 @@ Each student in this class took calculus
 
 1. **Quantifiers** - we can express quantity now
 
-![premise](./Lect-6-img/quantity.png)
+![premise](./Lect6-img/quantity.png)
 
-![premise](./Lect-6-img/quantifiers.png)
+![premise](./Lect6-img/quantifiers.png)
 
 2. **Predicates** - a proposition that depends on a variable
    - variables
@@ -56,13 +56,13 @@ Each student in this class took calculus
 
 Quantifier variables
 
-![premise](./Lect-6-img/variables.png)
+![premise](./Lect6-img/variables.png)
 
-![premise](./Lect-6-img/aliens.png)
+![premise](./Lect6-img/aliens.png)
 
 You can invent predicates as needed
 
-![premise](./Lect-6-img/quantifiers2.png)
+![premise](./Lect6-img/quantifiers2.png)
 
 ---
 
@@ -71,4 +71,4 @@ You can invent predicates as needed
 1. All integers are even or odd
 2. There exists an integer that is both even nd prime
 
-![premise](./Lect-6-img/examples.png)
+![premise](./Lect6-img/examples.png)
