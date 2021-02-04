@@ -87,7 +87,11 @@ Returns:
 int: the nth fibonacci number.
 '''
 def recursive_fib(n):
-    
+    if  n < 2:
+        fib_n = n
+        return fib_n
+        
+    fib_n = recursive_fib(n - 1) + recursive_fib(n - 2)
 
     return fib_n # int
 
@@ -101,19 +105,38 @@ Returns:
 int: the nth fibonacci number.
 '''
 def iterative_fib(n):
-    # WRITE YOUR CODE HERE
+    
+    numbers = [0,1]
+    total = 1
+    
+    fib_n = 0
+    
+    for i in range(1, n):
+        
+        if len(numbers) != n:
+            print(numbers[i])
+            total = numbers[i] + numbers[i - 1]
+
+            numbers.append(total)
+            
+            
+    fib_n = total + numbers[n - 2]
+    
+    if n == 1:
+        fib_n = 1
+    
     return fib_n # int
 
-'''
-Returns whether two sentences are synonyms or not, given a list of synonyms.
+#'''
+#Returns whether two sentences are synonyms or not, given a list of synonyms.
 
-Parameters:
-synonyms (list): A list of tuples of the synonyms you should store.
-sentences (tuple): A 2-tuple containing two sentences you want to compare.
+#Parameters:
+#synonyms (list): A list of tuples of the synonyms you should store.
+#sentences (tuple): A 2-tuple containing two sentences you want to compare.
 
-Returns:
-boolean: Whether the sentences are synonyms or not.
-'''
+#Returns:
+#boolean: Whether the sentences are synonyms or not.
+#'''
 #def synonym_checker(synonyms, sentences):
     # WRITE YOUR CODE HERE
 #    return is_synonym # boolean
