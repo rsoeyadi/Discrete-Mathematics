@@ -68,7 +68,7 @@ def sentence_counter(sentence):
     sentence = sentence.lower()
     
     words = sentence.split()
-    
+   
     counts = [0 for number in range(len(words))]
     
     for index, word in enumerate(words):
@@ -105,6 +105,7 @@ Returns:
 int: the nth fibonacci number.
 '''
 def iterative_fib(n):
+
     
     numbers = [0,1]
     total = 1
@@ -114,17 +115,17 @@ def iterative_fib(n):
     for i in range(1, n):
         
         if len(numbers) != n:
-            print(numbers[i])
             total = numbers[i] + numbers[i - 1]
-
             numbers.append(total)
-            
+
             
     fib_n = total + numbers[n - 2]
     
+    if n == 0:
+        fib_n = 0
     if n == 1:
         fib_n = 1
-    
+        
     return fib_n # int
 
 #'''
@@ -174,8 +175,8 @@ if __name__ == '__main__':
     print("---------------------------------------")
     print("PART B: Fibonacci")
     print("---------------------------------------")
-    tests = [[1, 1], [4, 4], [10, 10]]
-    answers = [[1, 1], [3, 3], [55, 55]]
+    tests = [[1, 1], [4, 4], [9, 9]]
+    answers = [[1, 1], [3, 3], [34, 34]]
     for count, test in enumerate(tests):
         if(answers[count][0] == recursive_fib(test[0]) and
             answers[count][1] == iterative_fib(test[1])):
