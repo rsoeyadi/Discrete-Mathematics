@@ -1,0 +1,85 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Homework 3 - Logic II (Spring 2021)}
+\author
+{
+Ryan, Soeyadi
+\and rs4163
+}
+
+
+\begin{document}
+    \maketitle
+    
+    \section*{Question 1}
+    $\neg p \lor (q \land (r \lor p))$\\ \\
+    $\neg (\neg p \lor (q \land (r \lor p)))$ \\
+    $p \land \neg(q \land (r \lor p))$ \\
+    $p \land (\neg q \lor \neg(r \lor p))$ \\
+    $p \land (\neg q \lor (\neg r) \land (\neg p))$ \\
+    $p \land (\neg q \lor (\neg r \land \neg p))$ \\
+    $p \land (\neg q \lor \neg r) \land (\neg q \lor \neg p)$ \\
+    $p \land (\neg q \lor \neg p) \land (\neg q \lor \neg r) $ \\
+    $p \land (\neg p \lor \neg q) \land (\neg q \lor \neg r) $ \\
+    $(p \land \neg p) \lor (p \land \neg q) \land (\neg q \lor \neg r)$ \\
+    $False \lor (p \land \neg q) \land (\neg q \lor \neg r)$ \\
+    $(p \land \neg q) \land (\neg q \lor \neg r)$ \\
+    $p \land \neg q \land (\neg q \lor \neg r)$ \\
+    $p \land \neg q$ \\
+    \newpage
+    \section*{Question 2}
+    $1. p \implies (q \lor r)$ \\
+    $2. \neg q$ \\
+    $3. \neg r$ \\
+    $4. \neg q \land \neg r$ (2, 3 - Conjunction inference rule) \\
+    $5. \neg (q \lor r)$ (4 - DeMorgan's Law) \\
+    $6. \neg p $ (1, 5 - Modus tollens) \\
+    
+    \newpage
+    \section*{Question 3}
+    Domain: $A \text{ (for Animals)}$ \\ \\
+    1. $\exists x \hspace{0.1cm} \mathcal{E} A$ 
+    $cat(x) \land lovely(x)$ \\
+    2. $\forall x \hspace{0.1cm} \mathcal{E} A$ 
+    $mouse(x) \implies smart(x)$ \\
+    3. $\forall x \hspace{0.1cm} \mathcal{E} A (cat(x) \implies lovely(x)) \land (mouse(x) \implies smart(x))$ \\
+    4. $\forall x \hspace{0.1cm} \forall y \hspace{0.1cm} \mathcal{E} A$
+    $cat(x) \land mouse(y) \implies play(x,y)$ \\
+    
+    \newpage
+    \section*{Question 4}
+    Domain: $A \text{ (for Animals)}$ \\ \\
+    1. $\neg (\exists x \hspace{0.1cm} \mathcal{E} A$ 
+    $cat(x) \land lovely(x))$ \\
+    $\indent \forall x  \hspace{0.1cm} \mathcal{E} A  \hspace{0.1cm} \neg cat(x) \lor \neg lovely(x))$\\ \\
+    
+    \noindent 2. $\neg(\forall x \hspace{0.1cm} \mathcal{E} A  \hspace{0.1cm}$ 
+    $mouse(x) \implies smart(x))$ \\
+    $\indent \neg(\forall x  \hspace{0.1cm} \mathcal{E} A  \hspace{0.1cm} \neg mouse(x) \lor smart(x))$\\
+    $\indent \exists x  \hspace{0.1cm} \mathcal{E} A \hspace{0.1cm} mouse(x) \land \neg smart(x)$ \\ \\
+    
+    \noindent 3. $\neg(\forall x \hspace{0.1cm} \mathcal{E} A  \hspace{0.1cm} (cat(x) \implies lovely(x)) \land (mouse(x) \implies smart(x)))   $ \\
+    $\indent \neg(\forall x \hspace{0.1cm} \mathcal{E} A  \hspace{0.1cm} (\neg cat(x) \lor lovely(x)) \land (\neg mouse(x) \lor smart(x)))$\\
+    $\indent \exists x  \hspace{0.1cm}  \mathcal{E} A  \hspace{0.1cm} \neg (\neg cat(x) \lor lovely(x)) \lor \neg (\neg mouse(x) \lor smart(x)))$ \\
+    $\indent \exists x  \hspace{0.1cm} \mathcal{E} A  \hspace{0.1cm} (cat(x) \land \neg lovely(x)) \lor (mouse(x) \land \neg smart(x))$ \\ \\
+    
+    \noindent 4. $\neg(\forall x \hspace{0.1cm} \forall y \hspace{0.1cm} \mathcal{E} A$
+    $cat(x) \land mouse(y) \implies {play(x,y))}$ \\
+    $\indent\neg(\forall x \hspace{0.1cm} \forall y \hspace{0.1cm} \mathcal{E} A$
+    $\neg(cat(x) \land mouse(y)) \lor play(x,y))$ \\
+    $\indent\neg(\forall x \hspace{0.1cm} \forall y \hspace{0.1cm} \mathcal{E} A$
+    $(\neg cat(x) \lor \neg mouse(y)) \lor play(x,y))$ \\
+    $\indent \exists x \exists y  \hspace{0.1cm} \mathcal{E} A  \hspace{0.1cm} \neg (\neg cat(x) \lor \neg mouse(y)) \land \neg play(x,y)$ \\
+    $\indent \exists x \exists y  \hspace{0.1cm} \mathcal{E} A  \hspace{0.1cm} (cat(x) \land mouse(y)) \land \neg play(x,y)$ \\
+  
+
+    \newpage
+    \section*{Question 5}
+    1. This is True. If we have a rational number, meaning that it is the quotient of two integers $a$ and $b$, and this number is positive, or $>0$, we can always multiply the divisor $b$ by $2$ to get an even smaller positive rational number $N$. \\ \\
+   2. Domain: Q \\
+   Variables: Rational number, q \\
+   An integer, b \\ \\
+   $\forall q \hspace{0.1cm} \exists Q \hspace{0.1cm} \frac{q}{b} > \frac{q}{2b} > 0$ \\
+
+   \end{document}
