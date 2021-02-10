@@ -1,8 +1,8 @@
 # COMS3203 DISCRETE MATHEMATICS
 # CODING ASSIGNMENT 1
 
-# YOUR NAME(s):
-# YOUR UNI(s):
+#YOUR NAME(s): Tara Bogavelli and Ryan Soeyadi
+# YOUR UNI(s): tb2913 and rs4163
 
 '''
 Returns the number of vowels in a given string s.
@@ -104,29 +104,28 @@ n (int): The nth Fibonacci number you want.
 Returns:
 int: the nth fibonacci number.
 '''
-def iterative_fib(n):
 
+def iterative_fib(n):
     
-    numbers = [0,1]
-    total = 1
-    
+    firstNumber = 0
+    secondNumber = 1
     fib_n = 0
     
-    for i in range(1, n):
-        
-        if len(numbers) != n:
-            total = numbers[i] + numbers[i - 1]
-            numbers.append(total)
-
-            
-    fib_n = total + numbers[n - 2]
-    
     if n == 0:
-        fib_n = 0
-    if n == 1:
-        fib_n = 1
+     return firstNumber
+
+    elif n == 1:
+      return secondNumber
+   
+    else:
+      for x in range(1,n):
+        fib_n = firstNumber + secondNumber
+        firstNumber = secondNumber
+        secondNumber = fib_n
+      return fib_n
         
-    return fib_n # int
+    
+
 
 #'''
 #Returns whether two sentences are synonyms or not, given a list of synonyms.
