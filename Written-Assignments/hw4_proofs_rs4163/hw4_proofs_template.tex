@@ -15,22 +15,22 @@ Ryan, Soeyadi
     
     \section*{Question 1}
     \textbf{Direct Proof} to prove: \\
-    \indent For all integers $n$, $3$ divides $(3n + 1)(3n + 2)(3n + 3)$. \\ \\ 
-    Let $n \in \mathbb{Z}$ \\
+    \indent For all integers $n$, $3$ divides $(3n + 1)(3n + 2)(3n + 3)$. 
+    \begin{proof} Let $n \in \mathbb{Z}$ \\
     We are trying to prove $3 | (3n + 1)(3n + 2)(3n + 3)$ \\ \\
     Let $a \in \mathbb{Z}$ \\
     $a = (3n + 1)(3n + 2)(3n + 3)$ \\
     $\equiv (27n^3 + 54n^2 + 33n + 6)$ \\
     $\equiv 3(9n^3 + 18n^2 + 11n + 2)$ \\ \\
     $\frac{a}{3} = (9n^3 + 18n^2 + 11n + 2)$ \\ \\
-    Since $3$ is a factor of $(27n^3 + 54n^2 + 33n + 6)$, we have proved that \\ for all integers $n$, $3$ divides $(3n + 1)(3n + 2)(3n + 3)$. \\ \qed
+    Since $3$ is a factor of $(27n^3 + 54n^2 + 33n + 6)$, we have proved that \\ for all integers $n$, $3$ divides $(3n + 1)(3n + 2)(3n + 3)$. \\ \end{proof}
 
     \newpage
     \section*{Question 2}
    \textbf{Proof by Contrapositive} to prove: \\
-   \indent For any integer $n$, if $3n + 1$ is even, then $n$ is odd. \\ \\
-   The \textbf{contrapositive} is: \\
-   \indent If $n$ is even, then $3n + 1$ is odd \\ \\
+   \indent For any integer $n$, if $3n + 1$ is even, then $n$ is odd. 
+   \begin{proof} The \textbf{contrapositive} is: \\
+   \indent \indent \ If $n$ is even, then $3n + 1$ is odd \\ \\
    Let $n \in \mathbb{Z}$ \\
    Let $a \in \mathbb{Z}$ \\ 
    Let $b \in \mathbb{Z}$ \\ \\
@@ -43,18 +43,19 @@ Ryan, Soeyadi
    $c = 3a$ \\
    $b = 2(c) + 1$ \\
    $\equiv 2c + 1$, the form of an odd integer \\ \\
-   Since $b$ is now in the form of an odd integer, we have proven the \\ contrapositive. We can conclude that for any integer $n$, if $3n + 1$ is even, then $n$ is odd. \\ \qed
+   Since $b$ is now in the form of an odd integer, we have proven the \\ contrapositive. We can conclude that for any integer $n$, if $3n + 1$ is even, then $n$ is odd. \\ \end{proof}
    
    
     \indent
     \newpage
     \section*{Question 3}
     \textbf{Proof of IFF} to prove: \\
-    \indent Let $x, y$ be integers, and prove that the product $xy$ is odd if and only if $x$ and $y$ are both odd integers. \\ \\
+    \indent Let $x, y$ be integers, and prove that the product $xy$ is odd if and only if $x$ and $y$ are both odd integers. \\
+    \begin{proof}
     We must prove both: \\
     \indent if $xy$ is odd, then $x$ and $y$ are both odd integers \\
     \indent if $x$ and $y$ are both odd integers, then $xy$ is odd \\ \\
-    For the first statement, we may prove the \textbf{contrapositive} of: \\
+    For the first statement, we may prove the \textbf{contrapositive}: \\
     \indent if $x$ and $y$ are both \textbf{even} integers, then $xy$ is even \\ \\
     Let $n \in \mathbb{Z}$ \\
     $x = 2n$, since we assume $x$ is even \\
@@ -79,13 +80,13 @@ Ryan, Soeyadi
     $k = 2n^2 + 2n$ \\
     $xy = 2k + 1$ \\ \\
     $xy$ is now in the form of an odd integer. \\
-    We have proven that if $x$ and $y$ are both \textbf{odd} integers, then $xy$ is odd.  \\ \qed
+    We have proven that if $x$ and $y$ are both \textbf{odd} integers, then $xy$ is odd.  \end{proof}
     
     \newpage
     \section*{Question 4}
     \textbf{Proof by cases} of: \\
-    \indent if $n$ is an integer, then $n^2 \geq n$ \\ \\
-    Let $n \in \mathbb{Z}$ \\ \\
+    \indent if $n$ is an integer, then $n^2 \geq n$ 
+    \begin{proof} Let $n \in \mathbb{Z}$ \\ \\
     We have three possible cases since $n \in \mathbb{Z}$: \\
     \indent $n < 0$, $n = 0$, and $n > 0$ \\ \\
     \textbf{Case 1}, $n < 0$ \\ \\
@@ -105,21 +106,23 @@ Ryan, Soeyadi
     \indent $(a)^2 \geq (a)$ \\
     \indent $a^2 \geq a$ \\ 
     \indent $n = a$ \\
-    \indent $n^2 \geq n$  \\ \qed
+    \indent $n^2 \geq n$  \\ \end{proof}
     
     \newpage
     \section*{Question 5}
     \textbf{Proof by Counter Example} of: \\
-    \indent For every prime number $p > 2$, there exists a natural number $n$\\ \indent such that $p = 2^n - 1$ \\ \\
+    \indent For every prime number $p > 2$, there exists a natural number $n$\\ \indent such that $p = 2^n - 1$ 
+    \begin{proof}
     Consider the prime number $5$: \\ \\
     \indent There is no $n \in \mathbb{N}$ such that $5 = 2^n -1$ \\ \\
     \indent $5 = 2^n - 1$ \\
     \indent $6 = 2^n$ \\ \\
-    There does not exist $n \in \mathbb{N}$ such that we can make this statement True. \\ \qed
+    There does not exist $n \in \mathbb{N}$ such that we can make this statement True. \\ \end{proof}
     \newpage
     \section*{Question 6}
     \textbf{Proof by contradiction} of: \\
-    \indent For all integers $n \in \mathbb{Z}$, if $n^2$ is odd, then $n$ is odd. \\ \\
+    \indent For all integers $n \in \mathbb{Z}$, if $n^2$ is odd, then $n$ is odd. 
+    \begin{proof}
     We can assume the negation, if this statement is False:\\
     \indent $n^2$ is odd and $n$ is even \\ \\
     Let $n \in \mathbb{Z}$ \\
@@ -130,7 +133,7 @@ Ryan, Soeyadi
     $\equiv 2(2a^2)$ \\  \\
     Let $b = 2a^2$ \\
     $n^2 = 2b$, the form of an even integer \\ \\
-    We have run into a contradiction since $n$ is even \textbf{and} $n^2$ is even, meaning that the opposite, our initial statement, is True. \\ \qed
+    We have run into a contradiction since $n$ is even \textbf{and} $n^2$ is even, meaning that the opposite, our initial statement, is True. \\ \end{proof}
     
   
 
