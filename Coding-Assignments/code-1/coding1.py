@@ -2,7 +2,7 @@
 # CODING ASSIGNMENT 1
 
 #YOUR NAME(s): Tara Bogavelli and Ryan Soeyadi
-# YOUR UNI(s): tb2913 and rs4163
+#YOUR UNI(s): tb2913 and rs4163
 
 '''
 Returns the number of vowels in a given string s.
