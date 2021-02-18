@@ -62,8 +62,3 @@ Since NOT(*p*) is **True**, then the True from the left statement is from *q*
 
 ![Inference-rules](./Lect5-img/Inference-rules4.png)
 
-**Modus Ponens: "Mode that affirm"**
-
-![Inference-rules](./Lect5-img/Inference-rules5.png)
-
-![Inference-rules](./Lect5-img/Inference-rules6.png)
