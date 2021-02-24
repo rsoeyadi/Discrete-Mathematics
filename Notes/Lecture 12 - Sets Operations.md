@@ -81,3 +81,15 @@ The size of the union
 
  ![15](./Lect12-img/15.png)
 
+If A, B do not share elements (**disjoint**), then **you will have**
+
+```
+|A U B| = |A| + |B|
+```
+
+but if they do share elements, you have to account for that by doing:
+
+```
+|A U B| = |A| + |B| - |A int. B|
+```
+
