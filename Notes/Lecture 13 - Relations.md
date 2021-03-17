@@ -63,7 +63,7 @@ x **R** y iff x + y is even **(i.e. if there is a connection, x + y is even; if 
 
 ![4](./Lect13-img/5.png)
 
-### Def ( inverse relation)
+### Def (inverse relation)
 
 Let **R** be a relation from A to B. The inverse relation of **R** is noted **R^-1**
 
@@ -78,3 +78,79 @@ Let **R** be a relation from A to B. The inverse relation of **R** is noted **R^
 ![8](./Lect13-img/8.png)
 
 ![9](./Lect13-img/9.png)
+
+---
+
+## Representation of Relations
+
+### Def (Digraph):
+
+A **directed graph where the nodes (vertices)** are connected by directed edges
+
+Ex.
+
+2 | 4, 4 | 8
+
+![10](./Lect13-img/10.png)
+
+---
+
+### Def (Matrix):
+
+![11](./Lect13-img/11.png)
+
+![12](./Lect13-img/12.png)
+
+---
+
+### Def (reflexivity):
+
+Let **R** be a relationship on the set A:
+
+![13](./Lect13-img/13.png)
+
+### Def (not Reflexive):
+
+**R** is not reflexive if:
+
+![14](./Lect13-img/14.png)
+
+### Def (irreflexive):
+
+**R** is irreflexive:
+
+![15](./Lect13-img/15.png)
+
+![16](./Lect13-img/16.png)
+
+---
+
+### Ex.
+
+![17](./Lect13-img/17.png)
+
+---
+
+### Def (Symmetry):
+
+R is symmetric:
+
+![18](./Lect13-img/18.png)
+
+### Def (not Symmetric):
+
+![19](./Lect13-img/19.png)
+
+---
+
+Ex.
+
+![20](./Lect13-img/20.png)
+
+---
+
+### Def (antisymmetric):
+
+**R is antisymmetric** if:
+
+![21](./Lect13-img/21.png)
