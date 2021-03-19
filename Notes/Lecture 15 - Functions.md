@@ -120,6 +120,10 @@ If you have **both properties** I.e. is both **onto and one-to-one**, this is a 
 
 ## Proof Examples
 
+To prove **onto**, you want to show how every element in B maps back an element in A. 
+
+You should solve for a, and plug it back into **f(a)** and show how it's equal to **b**.
+
 ![18](./Lect15-img/18.png)
 
 ![19](./Lect15-img/19.png)
