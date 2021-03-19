@@ -7,10 +7,9 @@
 # 3. Make sure there are no indentation errors and that the code compiles on your
 #    end
 #
-# YOUR NAME: Ryan Soeyadi
-# YOUR UNI: rs4163
+#YOUR NAME(s): Tara Bogavelli and Ryan Soeyadi
+#YOUR UNI(s): tb2913 and rs4163
 
-import itertools
 import re
 '''
 Returns the proposition, formatted in string form.
@@ -57,8 +56,8 @@ def format_prop(prop):
             op = "<->"
 
         # format left and right sides of a binary operation
-        left_prop = format_prop(prop[1])
-        right_prop = format_prop(prop[2])
+        left_prop = format_prop(prop1)
+        right_prop = format_prop(prop2)
 
         if len(left_prop.split()) == 1 and len(right_prop.split()) > 1:
             formatted_prop = "(" + left_prop + " " + op + " " + right_prop + ")"
