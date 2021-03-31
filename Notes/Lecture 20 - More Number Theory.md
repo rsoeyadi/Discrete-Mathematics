@@ -86,28 +86,76 @@ Let's call it **p_i**
 
 ![1](./Lect20-img/8.png)
 
-
+---
 
 ![1](./Lect20-img/9.png)
 
 ![1](./Lect20-img/10.png)
 
+---
+
+### Proof of FTA involves the following:
+
 ![1](./Lect20-img/11.png)
 
 ![1](./Lect20-img/12.png)
+
+---
+
+### Factoring (GCD Formula):
+
+GCD(30, 24)
+
+(30, 24, 6, 0)
 
 ![1](./Lect20-img/13.png)
 
 ![1](./Lect20-img/14.png)
 
+You take the highest shared power of each number
+
 ![1](./Lect20-img/15.png)
 
 ![1](./Lect20-img/16.png)
 
+---
+
+### Sieve of Eratosthemes
+
+Example:
+
+<u>N = 41</u>
+
 ![1](./Lect20-img/17.png)
+
+Check any number between 1 and the **FLOOR(Sqr(n))**
+
+---
+
+Proposition:
+
+To find all prime numbers between 2 and **N**, using the ***Sieve of Eratosthemes***, it is enough to cross all the multiples of all prime numbers until:
 
 ![1](./Lect20-img/18.png)
 
+**Steps:**
+
 ![1](./Lect20-img/19.png)
 
+---
+
+### Modulo Arithmetic (clock arithmetic):
+
 ![1](./Lect20-img/20.png)
+
+![1](./Lect20-img/21.png)
+
+![1](./Lect20-img/22.png)
+
+---
+
+The clock example (11am + 5 hours) can be represented this way:
+
+![1](./Lect20-img/23.png)
+
+![1](./Lect20-img/24.png)
