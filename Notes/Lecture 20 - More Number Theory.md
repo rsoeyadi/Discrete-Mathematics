@@ -158,4 +158,8 @@ The clock example (11am + 5 hours) can be represented this way:
 
 ![1](./Lect20-img/23.png)
 
+If the value is negative, keep adding 10s as needed until it's finally where you need to be.
+
 ![1](./Lect20-img/24.png)
+
+![1](./Lect20-img/25.png)
