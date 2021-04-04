@@ -2,8 +2,9 @@
 # CODING ASSIGNMENT 3
 
 # YOUR NAME(s): Ryan Soeyadi and Tara Bogavelli
-# YOUR UNI(s): rs4163 and 
+# YOUR UNI(s): rs4163 and tb2913 
 
+import math
 '''
 Returns the GCD of two integers using Euclid's algorithm. Also prints out the
 intermediate steps for Euclid's Algorithm on num1 and num2.
@@ -43,7 +44,27 @@ n (int): The target number to generate primes up to.
 Returns:
 list: List of all prime numbers <= n.
 '''
+
+def is_prime(number):
+    if (number < 2):
+        return False 
+
+    for divisor in range(2, number):
+        if (number % divisor == 0):
+            return False
+        
+    return True
+
 def prime_gen(n):
+   if !(n > 1):
+        return 1
+
+    primes = []
+
+    for number in range(2,n):
+        if is_Prime(number):
+            
+
    return primes # your list of prime numbers
 
 '''
