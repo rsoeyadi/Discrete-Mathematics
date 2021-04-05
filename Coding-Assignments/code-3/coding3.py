@@ -57,15 +57,9 @@ def is_prime(number):
 
 def prime_gen(n):
 
+    for i in range(100):
+        print(f"{i} is {is_prime(i)}")
     primes = []
-
-    for prime in range(0, n):
-        primes.append(prime)
-
-    for number in primes:
-        if is_prime(number) == False:
-            primes.remove(number)
-
     return primes # your list of prime numbers
 
 '''
