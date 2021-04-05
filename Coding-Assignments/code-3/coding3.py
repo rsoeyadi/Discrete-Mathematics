@@ -54,12 +54,21 @@ def is_prime(number):
             return False
 
     return True
-
 def prime_gen(n):
+    primes = [] #initialize list that will holds every number from 2
 
-    for i in range(100):
-        print(f"{i} is {is_prime(i)}")
-    primes = []
+    for i in range(2,n):
+       primes.append(i) #add all the numbers from 2
+
+    for i in range(len(primes) - 1): 
+       if is_prime(primes[i]):
+             for j in range(i + 1, len(primes) - 1): 
+                 if primes[j] % primes[i] == 0: #check if multiple of primes[i]
+                    primes.remove(primes[j]) #if it is a multiple of primes[i], remove from list
+                 if j + 1 == len(primes): # **initial length is going to be large, and we are getting rid of elements in the list during loop, so check if we will go out of index
+                     break
+       if i + 1 == len(primes):
+           break # same as above--check if we will go out of index
     return primes # your list of prime numbers
 
 '''
@@ -130,22 +139,22 @@ if __name__ == '__main__':
     print("Test Case 2 (Correct Answer):", prime_gen_test_2_ans)
     print("Test Case 2:", ("# PASSED! #" if prime_gen(prime_gen_test_2) == prime_gen_test_2_ans  else "# INCORRECT #"))
     print()
-#    prime_gen_test_3 = 884
-#    prime_gen_test_3_ans = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
-#    31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109,
-#    113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197,
-#    199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283,
-#    293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389,
-#    397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487,
-#    491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599,
-#    601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691,
-#    701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809, 811,
-#    821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883]
-#    print("Test Case 3: Prime Numbers Up To:", prime_gen_test_3)
-#    print("Test Case 3 (Your Answer):", prime_gen(prime_gen_test_3))
-#    print("Test Case 3 (Correct Answer):", prime_gen_test_3_ans)
-#    print("Test Case 3:", ("# PASSED! #" if prime_gen(prime_gen_test_3) == prime_gen_test_3_ans  else "# INCORRECT #"))
-#    print("---------------------------------------")
+    prime_gen_test_3 = 884
+    prime_gen_test_3_ans = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29,
+    31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97, 101, 103, 107, 109,
+    113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197,
+    199, 211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283,
+    293, 307, 311, 313, 317, 331, 337, 347, 349, 353, 359, 367, 373, 379, 383, 389,
+    397, 401, 409, 419, 421, 431, 433, 439, 443, 449, 457, 461, 463, 467, 479, 487,
+    491, 499, 503, 509, 521, 523, 541, 547, 557, 563, 569, 571, 577, 587, 593, 599,
+    601, 607, 613, 617, 619, 631, 641, 643, 647, 653, 659, 661, 673, 677, 683, 691,
+    701, 709, 719, 727, 733, 739, 743, 751, 757, 761, 769, 773, 787, 797, 809, 811,
+    821, 823, 827, 829, 839, 853, 857, 859, 863, 877, 881, 883]
+    print("Test Case 3: Prime Numbers Up To:", prime_gen_test_3)
+    print("Test Case 3 (Your Answer):", prime_gen(prime_gen_test_3))
+    print("Test Case 3 (Correct Answer):", prime_gen_test_3_ans)
+    print("Test Case 3:", ("# PASSED! #" if prime_gen(prime_gen_test_3) == prime_gen_test_3_ans  else "# INCORRECT #"))
+    print("---------------------------------------")
 
 #    print("PART C: Goldbach's Conjecture")
 #    print("---------------------------------------")
