@@ -28,12 +28,7 @@ def euclid(num1, num2):
     print(f"GCD({num1},{num2}) = ", end='') 
     gcd = euclid(num2, remainder)
 
-
-
-
     return gcd # your GCD
-
-
 
 '''
 Returns a list of prime numbers up to (and including) a certain input integer, n.
