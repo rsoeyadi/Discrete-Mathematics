@@ -83,12 +83,11 @@ list: A list of length 2 containing 2 ints that sum up to n.
 '''
 def check_goldbach(n):
     prime_gen_list = prime_gen(n)
-    
+
     primes = []
-    
-    
+
     for i in range(len(prime_gen_list)):
-        for j in range(len(prime_gen_list)):
+        for j in range(i + 1, len(prime_gen_list)):
             if prime_gen_list[i] + prime_gen_list[j] == n:
                 primes =  [prime_gen_list[i], prime_gen_list[j]]
                 break
