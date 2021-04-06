@@ -54,6 +54,7 @@ def is_prime(number):
             return False
 
     return True
+
 def prime_gen(n):
     primes = [] #initialize list that will holds every number from 2
 
@@ -62,10 +63,10 @@ def prime_gen(n):
 
     for i in range(len(primes) - 1): 
        if is_prime(primes[i]):
-             for j in range(i + 1, len(primes) - 1): 
+             for j in range(i + 1, len(primes)): 
                  if primes[j] % primes[i] == 0: #check if multiple of primes[i]
                     primes.remove(primes[j]) #if it is a multiple of primes[i], remove from list
-                 if j + 1 == len(primes): # **initial length is going to be large, and we are getting rid of elements in the list during loop, so check if we will go out of index
+                 if j + 1 >= len(primes): # **initial length is going to be large, and we are getting rid of elements in the list during loop, so check if we will go out of index
                      break
        if i + 1 == len(primes):
            break # same as above--check if we will go out of index
@@ -80,9 +81,21 @@ n (int): The target even integer to check Goldbach's Conjecture for.
 Returns:
 list: A list of length 2 containing 2 ints that sum up to n.
 '''
-#def check_goldbach(n):
-    # WRITE YOUR CODE HERE
-#    return primes # two prime numbers that sum up to n
+def check_goldbach(n):
+    prime_gen_list = prime_gen(n)
+    
+    primes = []
+    
+    
+    for i in range(len(prime_gen_list)):
+        for j in range(len(prime_gen_list)):
+            if prime_gen_list[i] + prime_gen_list[j] == n:
+                primes =  [prime_gen_list[i], prime_gen_list[j]]
+                break
+        if len(primes) == 2:
+            break
+
+    return primes # two prime numbers that sum up to n
 
 ### DO NOT TURN IN AN ASSIGNMENT WITH ANYTHING BELOW HERE MODIFIED ###
 if __name__ == '__main__':
@@ -156,29 +169,29 @@ if __name__ == '__main__':
     print("Test Case 3:", ("# PASSED! #" if prime_gen(prime_gen_test_3) == prime_gen_test_3_ans  else "# INCORRECT #"))
     print("---------------------------------------")
 
-#    print("PART C: Goldbach's Conjecture")
-#    print("---------------------------------------")
-#    goldbach_test_1 = 8
-#    goldbach_test_1_ans = [3, 5]
-#    student_ans = check_goldbach(goldbach_test_1)
-#    print("Test Case 1: 2 Primes For:", goldbach_test_1)
-#    print("Test Case 1 (Your Answer):", check_goldbach(goldbach_test_1))
-#    print("Test Case 1 (A Correct Answer):", goldbach_test_1_ans)
-#    print("Test Case 1:", ("# PASSED! #" if student_ans[0] + student_ans[1] == goldbach_test_1  else "# INCORRECT #"))
-#    print()
-#    goldbach_test_2 = 482
-#    goldbach_test_2_ans = [3, 479]
-#    student_ans = check_goldbach(goldbach_test_2)
-#    print("Test Case 2: 2 Primes For:", goldbach_test_2)
-#    print("Test Case 2 (Your Answer):", check_goldbach(goldbach_test_2))
-#    print("Test Case 2 (A Correct Answer):", goldbach_test_2_ans)
-#    print("Test Case 2:", ("# PASSED! #" if student_ans[0] + student_ans[1] == goldbach_test_2  else "# INCORRECT #"))
-#    print()
-#    goldbach_test_3 = 1152
-#    goldbach_test_3_ans = [23, 1129]
-#    student_ans = check_goldbach(goldbach_test_3)
-#    print("Test Case 3: 2 Primes For:", goldbach_test_3)
-#    print("Test Case 3 (Your Answer):", check_goldbach(goldbach_test_3))
-#    print("Test Case 3 (A Correct Answer):", goldbach_test_3_ans)
-#    print("Test Case 3:", ("# PASSED! #" if student_ans[0] + student_ans[1] == goldbach_test_3  else "# INCORRECT #"))
-##    print("---------------------------------------")
+    print("PART C: Goldbach's Conjecture")
+    print("---------------------------------------")
+    goldbach_test_1 = 8
+    goldbach_test_1_ans = [3, 5]
+    student_ans = check_goldbach(goldbach_test_1)
+    print("Test Case 1: 2 Primes For:", goldbach_test_1)
+    print("Test Case 1 (Your Answer):", check_goldbach(goldbach_test_1))
+    print("Test Case 1 (A Correct Answer):", goldbach_test_1_ans)
+    print("Test Case 1:", ("# PASSED! #" if student_ans[0] + student_ans[1] == goldbach_test_1  else "# INCORRECT #"))
+    print()
+    goldbach_test_2 = 482
+    goldbach_test_2_ans = [3, 479]
+    student_ans = check_goldbach(goldbach_test_2)
+    print("Test Case 2: 2 Primes For:", goldbach_test_2)
+    print("Test Case 2 (Your Answer):", check_goldbach(goldbach_test_2))
+    print("Test Case 2 (A Correct Answer):", goldbach_test_2_ans)
+    print("Test Case 2:", ("# PASSED! #" if student_ans[0] + student_ans[1] == goldbach_test_2  else "# INCORRECT #"))
+    print()
+    goldbach_test_3 = 1152
+    goldbach_test_3_ans = [23, 1129]
+    student_ans = check_goldbach(goldbach_test_3)
+    print("Test Case 3: 2 Primes For:", goldbach_test_3)
+    print("Test Case 3 (Your Answer):", check_goldbach(goldbach_test_3))
+    print("Test Case 3 (A Correct Answer):", goldbach_test_3_ans)
+    print("Test Case 3:", ("# PASSED! #" if student_ans[0] + student_ans[1] == goldbach_test_3  else "# INCORRECT #"))
+    print("---------------------------------------")
