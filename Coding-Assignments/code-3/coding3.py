@@ -51,7 +51,7 @@ def is_prime(number):
     return True
 
 def prime_gen(n):
-    primes = [] #initialize list that will holds every number from 2
+    primes = [] #initialize list that will hold every number from 2
 
     for i in range(2,n):
        primes.append(i) #add all the numbers from 2
