@@ -96,5 +96,7 @@ Ex.
 
 ![1](./Lect22-img/20.png)
 
+---
 
+![1](./Lect22-img/21.png)
 
